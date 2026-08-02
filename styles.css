@@ -37,7 +37,7 @@ body {
 }
 
 .bio-text {
-  flex: 0
+  flex: 1
 }
  
 .bio-text p {
