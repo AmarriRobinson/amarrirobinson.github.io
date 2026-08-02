@@ -5,3 +5,61 @@
   --color-other: #6A8E7F;
   --font-mono: "Ubuntu Sans Mono", Consolas, monospace;
 }
+
+body {
+  margin: 0;
+  background: var(--color-bg);
+  color: var(--color-text);
+  font-family: var(--font-mono);
+  line-height: 1.6;
+}
+
+.page {
+  max-width: 800px;
+  margin: 0 auto;
+  border: 2px solid var(--color-border);
+  padding: 40px 48px;
+}
+
+.page-title {
+  text-align: center;
+  font-size: 1.8rem;
+  letter-spacing: 4px;
+  margin-top: 0;
+  margin-bottom: 32px;
+}
+
+.bio-section {
+  display: flex;
+  gap: 32px;
+  align-items: flex-start;
+  margin-bottom: 32px;
+}
+
+.bio-text {
+  flex: 1; /* text column grows to fill remaining space */
+}
+ 
+.bio-text p {
+  margin: 0 0 20px 0;
+}
+ 
+.headshot {
+  width: 220px;
+  height: 260px;
+  object-fit: cover; /* crops the image to fill the box without distorting it */
+  flex-shrink: 0;    /* prevents the image from getting squeezed */
+}
+
+@media (max-width: 600px) {
+  .bio-section {
+    flex-direction: column;
+    align-items: center;
+  }
+ 
+  .page {
+    padding: 24px;
+  }
+}
+
+
