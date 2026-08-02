@@ -51,6 +51,11 @@ body {
   flex-shrink: 0;    /* prevents the image from getting squeezed */
 }
 
+@media (max-width: 600px) {
+  .bio-section {
+    flex-direction: column;
+    align-items: center;
+  }
  
   .page {
     padding: 24px;
